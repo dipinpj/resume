@@ -79,7 +79,10 @@ li{
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border:2px solid rgb(255, 255, 255);    
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
 }
 
 #email{
@@ -108,6 +111,8 @@ li{
 
 #qualifications--list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #wrapper--techstack__items{
@@ -123,7 +128,9 @@ li{
     padding: 0.5em 1em;
     align-items: center;
 }
-
+.coding-font {
+    font-family: 'Times New Roman', Times, serif;
+  }
 .card--project{
     padding-top: 1em;
     padding-bottom: 1em;
@@ -203,8 +210,8 @@ li{
     }
 
     #profile-pic{
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
     #wrapper--hero{
@@ -222,12 +229,13 @@ li{
     margin: 0px;
     padding: 0px;
   }
+
+
   h1.page-header {
     margin: 0;
     padding: 0;
   }
 
-  p,
   h3 {
     margin: 0px;
     padding: 0px;
@@ -235,4 +243,10 @@ li{
   h3.page-header {
     margin: 0;
     padding: 0;
+  }
+  .jetbrains-mono-normal {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
   }
