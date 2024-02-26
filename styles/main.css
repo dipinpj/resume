@@ -65,7 +65,7 @@ li {
 #wrapper--hero {
     display: flex;
     align-items: center;
-    gap: 4em;
+    gap: 2em;
 }
 
 #bio,
