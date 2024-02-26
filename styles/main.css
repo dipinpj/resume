@@ -1,164 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
-:root{
-    --mainTextColor-light:#000;
-    --secondaryTextColor-light:rgb(51 51 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
+:root {
+    --mainTextColor-light: #000;
+    --secondaryTextColor-light: rgb(51 51 51);
+    --mainLinkColor-light: #0da2b8;
+    --mainBorderColor-light: rgb(218, 218, 218);
+    --mainBgColor-light: rgb(249, 250, 251);
 
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
-    
-    --mainTextColor:var(--mainTextColor-dark);
-    --secondaryTextColor:var(--secondaryTextColor-dark);
-    --mainLinkColor:var(--mainLinkColor-dark);
-    --mainBorderColor:var(--mainBorderColor-dark);
-    --mainBgColor:var(--mainBgColor-dark);
+    --mainTextColor-dark: #fff;
+    --secondaryTextColor-dark: #adb0b1;
+    --mainLinkColor-dark: rgb(30, 190, 214);
+    --mainBorderColor-dark: #2b3031;
+    --mainBgColor-dark: #131415;
+
+    --mainTextColor: var(--mainTextColor-dark);
+    --secondaryTextColor: var(--secondaryTextColor-dark);
+    --mainLinkColor: var(--mainLinkColor-dark);
+    --mainBorderColor: var(--mainBorderColor-dark);
+    --mainBgColor: var(--mainBgColor-dark);
 
 }
 
 
-*{
+* {
     font-family: 'Readex Pro';
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
-    
+
 }
 
-body{
-    background-color: var(--mainBgColor);            
+body {
+    background-color: var(--mainBgColor);
 }
 
-p, span, li{
+p,
+span,
+li {
     color: var(--secondaryTextColor);
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 500;
 }
 
-li{
+li {
     line-height: 1.9em;
 }
 
-#container--main{
+#container--main {
     max-width: 700px;
     margin: 0 auto;
     padding: 1em;
 }
 
-.section--page{
+.section--page {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-#wrapper--hero{
+#wrapper--hero {
     display: flex;
     align-items: center;
     gap: 4em;
 }
 
-#bio, a{
+#bio,
+a {
     font-weight: 300;
 }
 
-#user-name{
+#user-name {
     font-size: 48px;
     line-height: 1em;
 }
 
-#profile-pic{
+#profile-pic {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border:2px solid rgb(255, 255, 255);    
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
-#email{
+#email {
     color: var(--mainTextColor);
 }
 
-#socials--list{
+#socials--list {
     display: flex;
     justify-content: space-between;
     column-gap: 1em;
     flex-wrap: wrap;
 }
 
-#socials--list a{
+#socials--list a {
     font-weight: 300;
     color: var(--secondaryTextColor);
     font-size: 0.9em;
     transition: 0.3s;
 }
 
-#socials--list a:hover{
+#socials--list a:hover {
     font-weight: 100;
     color: var(--mainLinkColor);
     font-size: 0.9em;
 }
 
-#qualifications--list{
+#qualifications--list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#wrapper--techstack__items{
+#wrapper--techstack__items {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     font-size: 0.9em;
 }
 
-.card--techstack{
+.card--techstack {
     border: 1px solid var(--mainBorderColor);
     border-radius: 5px;
     padding: 0.5em 1em;
     align-items: center;
 }
+
 .coding-font {
     font-family: 'Times New Roman', Times, serif;
-  }
-.card--project{
+}
+
+.card--project {
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 1px solid var(--mainBorderColor);
 }
 
-.card--project a{
+.card--project a {
     color: var(--mainTextColor);
 
     transition: 0.3s;
 }
 
-.card--project a:hover{
-    color: rgb(30, 190,214);
+.card--project a:hover {
+    color: rgb(30, 190, 214);
 
 }
 
-.card--work-history{
+.card--work-history {
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
 }
 
-.line-break{
+.line-break {
     background-color: var(--mainBorderColor);
     height: 1px;
 }
+
 .simple-card {
     flex: 0 0 auto;
     border: 1px solid #ddd;
@@ -168,85 +174,145 @@ li{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-  .card-container {
-            display: flex;
-            overflow: auto;
-            white-space: nowrap;
-        }
-        
-        /* Style for each individual card */
-        .card {
-            flex: 0 0 auto;
-            width: 200px; /* Adjust the width as needed */
-            margin-right: 10px; /* Spacing between cards */
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+.card-container {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
 
-        /* Style for the card image */
-        .card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
+/* Style for each individual card */
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    /* Adjust the width as needed */
+    margin-right: 10px;
+    /* Spacing between cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        /* Style for card content */
-        .card-content {
-            padding: 10px;
-        }
+/* Style for the card image */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 
-@media(max-width:600px){
+/* Style for card content */
+.card-content {
+    padding: 10px;
+}
 
-    .section--page{
+@media(max-width:600px) {
+
+    .section--page {
         padding-top: 1em;
         padding-bottom: 1em;
     }
 
-    #wrapper--hero{
+    #wrapper--hero {
         display: flex;
         align-items: center;
         gap: 1em;
     }
 
-    #profile-pic{
+    #profile-pic {
         width: 180px;
         height: 180px;
     }
 
-    #wrapper--hero{
+    #wrapper--hero {
         flex-direction: column;
     }
 
-    .card--work-history{
+    .card--work-history {
         border-left: none;
         padding-left: 0;
     }
 }
 
 
-  p,h1 {
+p,
+h1 {
     margin: 0px;
     padding: 0px;
-  }
+}
 
 
-  h1.page-header {
+h1.page-header {
     margin: 0;
     padding: 0;
-  }
+}
 
-  h3 {
+h3 {
     margin: 0px;
     padding: 0px;
-  }
-  h3.page-header {
+}
+
+h3.page-header {
     margin: 0;
     padding: 0;
-  }
-  .jetbrains-mono-normal {
+}
+
+.jetbrains-mono-normal {
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 12px;
     font-style: normal;
-  }
+}
+
+.fa {
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    border-radius: 50%;
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    border-radius: 50%;
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    border-radius: 50%;
+    background: #c41be2;
+    color: white;
+}
+
+.fa-linkedin {
+    border-radius: 50%;
+    background: #007bb5;
+    color: white;
+}
+
+
+.fa-android {
+    border-radius: 50%;
+    background: #a4c639;
+    color: white;
+}
+
+.fa-github {
+    border-radius: 50%;
+    background: #a4c639;
+    color: white;
+}
