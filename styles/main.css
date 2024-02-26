@@ -216,3 +216,23 @@ li{
         padding-left: 0;
     }
 }
+
+
+  p,h1 {
+    margin: 0px;
+    padding: 0px;
+  }
+  h1.page-header {
+    margin: 0;
+    padding: 0;
+  }
+
+  p,
+  h3 {
+    margin: 0px;
+    padding: 0px;
+  }
+  h3.page-header {
+    margin: 0;
+    padding: 0;
+  }
