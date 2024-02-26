@@ -292,6 +292,7 @@ h3.page-header {
     height: 50px;
     margin-right: 10px;
     text-align: center;
+    align-items: center;
     text-decoration: none;
 }
 
