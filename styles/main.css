@@ -294,25 +294,25 @@ h3.page-header {
 
 .fa-instagram {
     border-radius: 50%;
-    background: #c41be2;
+    background-image: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
     color: white;
 }
 
 .fa-linkedin {
     border-radius: 50%;
-    background: #007bb5;
+    background: #0077b5;
     color: white;
 }
 
 
 .fa-android {
     border-radius: 50%;
-    background: #a4c639;
+    background: #3DDC84;
     color: white;
 }
 
 .fa-github {
     border-radius: 50%;
-    background: #a4c639;
+    background: #2b3137;
     color: white;
 }
