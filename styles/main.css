@@ -89,6 +89,16 @@ a {
     -webkit-border-radius: 50%;
 }
 
+#project-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20%;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1);
+}
+
 #email {
     color: var(--mainTextColor);
 }
@@ -184,6 +194,18 @@ a {
 
 /* Style for each individual card */
 .card {
+    flex: 0 0 auto;
+    width: 200px;
+    /* Adjust the width as needed */
+    margin-right: 10px;
+    /* Spacing between cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each individual card */
+.screenshot {
     flex: 0 0 auto;
     width: 200px;
     /* Adjust the width as needed */
@@ -318,3 +340,19 @@ h3.page-header {
     background: #2b3137;
     color: white;
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 14px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    text-align: start;
+  }
