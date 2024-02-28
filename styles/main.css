@@ -237,7 +237,7 @@ a {
 
     #wrapper--hero {
         display: flex;
-        align-items: center;
+        align-items: start;
         gap: 1em;
     }
 
