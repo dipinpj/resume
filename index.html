@@ -23,7 +23,7 @@
 
             <div>
                 <h1 id="user-name">Dipin P J</h1>
-                <h3 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+                <h3>I'm <span class="typing" style="color:#12D640"></span></h2>
                     <p id="email">pjdipin666@gmail.com</p>
                     <p id="email">+91 7025028741</p>
 
@@ -41,6 +41,15 @@
             </div>
 
         </section>
+        <section id="wrapper--hero" class="section--page">
+            <div class="toggle-button">
+                <button onclick="myFunction()"><p>Toggle dark mode</p></button>
+            </div>
+
+        </section>
+
+
+      
 
         <section class="section--page">
             <div>
@@ -101,10 +110,10 @@
             </div>
         </section>
 
-        <section id="work-history-wrapper" class="section--page">
+        <section id="work-history-wrapper" class="grid-container">
             <h2>Work History</h2>
 
-            <div class="simple-card">
+            <div class="grid-item">
                 <strong>SENIOR ANDROID DEVELOPER - QBurst Technologies</strong>
                 <p>05/2023 - Present</p>
                
@@ -123,10 +132,9 @@
 
             <!-- <div class="line-break"></div> -->
 
-            <div class="simple-card">
+            <div class="grid-item">
                 <strong>Senior Android Developer | Leadergroup</strong>
                 <p>10/2021 - 05/2023</p>
-                <p>Produced content showcasing new tech, tutorials & interviews with top developers.</p>
                 <ul>
                     <li>Collaborated within an Agile Scrum team, actively contributing to Continuous Integration and
                         Continuous
@@ -143,12 +151,9 @@
 
             <!-- <div class="line-break"></div> -->
 
-            <div class="simple-card">
+            <div class="grid-item">
                 <strong>Senior Android Developer | Codinghands Info</strong>
                 <p>10/2017 - 10/2019</p>
-                <p>Designed and developed a laboratory management system. My system
-                    provided an interface for lab technicians and customers to view and
-                    track data from samples tested in the lab.</p>
                 <ul>
                     <li>Developed advanced programs and implemented design enhancements for over 5 existing
                         applications.</li>
@@ -165,12 +170,9 @@
 
             <!-- <div class="line-break"></div> -->
 
-            <div class="simple-card">
+            <div class="grid-item">
                 <strong>DIGITAL MARKETER | UNIFIVE DIGITAL</strong>
                 <p>2014 - 2017</p>
-                <p>Started a digital agency building websites and marketing for
-                    local businesses. Mostly Wordpress sites with small modifications to
-                    themes.</p>
                 <ul>
                     <li>Organized SEO & SEM campaigns on a local and global scale.</li>
                     <li>Saved a customer $110k a year by reducing Adwords CPC cost with optimization</li>
@@ -240,7 +242,6 @@
             </ul>
         </section>
 
-
     </div>
 
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -264,6 +265,12 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("white-mode");
+        }
+        </script>
 </body>
 
 </html>

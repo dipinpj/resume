@@ -18,8 +18,18 @@
     --mainLinkColor: var(--mainLinkColor-dark);
     --mainBorderColor: var(--mainBorderColor-dark);
     --mainBgColor: var(--mainBgColor-dark);
+    --themeOppoColor: var(--mainTextColor-dark);
 
 }
+
+.white-mode {
+    --mainTextColor: var(--mainTextColor-light);
+    --secondaryTextColor: var(--secondaryTextColor-light);
+    --mainLinkColor: var(--mainLinkColor-light);
+    --mainBorderColor: var(--mainBorderColor-light);
+    --mainBgColor: var(--mainBgColor-light);
+    --themeOppoColor: var(--mainTextColor-dark);
+  }
 
 
 * {
@@ -101,6 +111,11 @@ a {
 
 #email {
     color: var(--mainTextColor);
+}
+
+
+#toggle-button {
+    color: var(--themeOppoColor);
 }
 
 #socials--list {
