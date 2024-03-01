@@ -6,12 +6,14 @@
     --mainLinkColor-light: #0da2b8;
     --mainBorderColor-light: rgb(218, 218, 218);
     --mainBgColor-light: rgb(249, 250, 251);
+    --mainCardColor-dark: #f0f0f0;
 
     --mainTextColor-dark: #fff;
     --secondaryTextColor-dark: #adb0b1;
     --mainLinkColor-dark: rgb(30, 190, 214);
     --mainBorderColor-dark: #2b3031;
     --mainBgColor-dark: #131415;
+    --mainCardColor-dark: #242525;
 
     --mainTextColor: var(--mainTextColor-dark);
     --secondaryTextColor: var(--secondaryTextColor-dark);
@@ -19,6 +21,15 @@
     --mainBorderColor: var(--mainBorderColor-dark);
     --mainBgColor: var(--mainBgColor-dark);
     --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark);
+
+    /* --mainTextColor: var(--mainTextColor-light);
+    --secondaryTextColor: var(--secondaryTextColor-light);
+    --mainLinkColor: var(--mainLinkColor-light);
+    --mainBorderColor: var(--mainBorderColor-light);
+    --mainBgColor: var(--mainBgColor-light);
+    --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark); */
 
 }
 
@@ -29,6 +40,7 @@
     --mainBorderColor: var(--mainBorderColor-light);
     --mainBgColor: var(--mainBgColor-light);
     --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark);
   }
 
 
@@ -370,4 +382,37 @@ h3.page-header {
     margin-right: 12px;
     margin-bottom: 12px;
     text-align: start;
+  }
+
+  /* Project Section */
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+  }
+  .cardItem {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: start;
+    transition: all 500ms ease-in-out;
+  }
+  .cardItem:hover {
+    margin-top: 40px;
+    cursor: pointer;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .cardLabel {
+    margin-top: 24px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+  }
+  .material-icons {
+    font-size: 64px;
+    margin-top: 24px;
+    color: #1ab5ad;
   }
