@@ -171,7 +171,8 @@ a {
 }
 
 .coding-font {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: IBM Plex Mono;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .card--project {
@@ -307,7 +308,8 @@ h3.page-header {
 }
 
 .jetbrains-mono-normal {
-    font-family: "JetBrains Mono", monospace;
+    font-family: IBM Plex Mono;
+    /* font-family: "JetBrains Mono", monospace; */
     font-optical-sizing: auto;
     font-weight: 12px;
     font-style: normal;
@@ -397,14 +399,15 @@ h3.page-header {
     margin-right: 20px;
     padding: 20px;
     text-align: start;
-    transition: all 500ms ease-in-out;
+    /* transition: all 500ms ease-in-out; */
+    background-color: (--mainCardColor-dark);
   }
-  .cardItem:hover {
+  /* .cardItem:hover {
     margin-top: 40px;
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
-    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
+    /* transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1); } 
+  */
   .cardLabel {
     margin-top: 24px;
     width: 100%;
@@ -415,4 +418,14 @@ h3.page-header {
     font-size: 64px;
     margin-top: 24px;
     color: #1ab5ad;
+  }
+
+  .dark-mode{
+    --mainTextColor: var(--mainTextColor-dark);
+    --secondaryTextColor: var(--secondaryTextColor-dark);
+    --mainLinkColor: var(--mainLinkColor-dark);
+    --mainBorderColor: var(--mainBorderColor-dark);
+    --mainBgColor: var(--mainBgColor-dark);
+    --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark);
   }
