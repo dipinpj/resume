@@ -1,27 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear:wght@400;700&display=swap');
 
 :root {
-    --mainTextColor-light: #000;
-    --secondaryTextColor-light: rgb(51 51 51);
+    --mainTextColor-light: #000000;
+    --secondaryTextColor-light:  #131419;
     --mainLinkColor-light: #0da2b8;
     --mainBorderColor-light: rgb(218, 218, 218);
-    --mainBgColor-light: rgb(249, 250, 251);
-    --mainCardColor-dark: #f0f0f0;
+    --mainBgColor-light: #e0e5ec;
+    --mainCardColor-dark: #f5f5f5;
 
-    --mainTextColor-dark: #fff;
-    --secondaryTextColor-dark: #adb0b1;
+    --mainTextColor-dark: #dcdcdc;
+    --secondaryTextColor-dark: #e0e5ec;
     --mainLinkColor-dark: rgb(30, 190, 214);
     --mainBorderColor-dark: #2b3031;
-    --mainBgColor-dark: #131415;
-    --mainCardColor-dark: #242525;
+    --mainBgColor-dark: #1e1f22;
+    /* --mainBgColor-dark: #dde1e7; */
+    --mainCardColor-dark: #000;
+
+
+    --card-shadow-light1: rgba(255, 255, 255, 0.45);
+    --card-shadow-light2: rgba(172, 172, 172, 0.3);
+    
+    --card-shadow-dark1: rgba(0, 0, 0, 0.8);
+    --card-shadow-dark2: rgba(80, 80, 80, 0.3);
+
 
     --mainTextColor: var(--mainTextColor-dark);
-    --secondaryTextColor: var(--secondaryTextColor-dark);
+    --secondaryTextColor: var(--mainTextColor-dark);
     --mainLinkColor: var(--mainLinkColor-dark);
     --mainBorderColor: var(--mainBorderColor-dark);
     --mainBgColor: var(--mainBgColor-dark);
     --themeOppoColor: var(--mainTextColor-dark);
     --mainCardColor: var(--mainCardColor-dark);
+    --cardShadowColor1: var(--card-shadow-dark1);
+    --cardShadowColor2: var(--card-shadow-dark2);
+    --neomorphicCardBg: var(--mainBgColor);
 
     /* --mainTextColor: var(--mainTextColor-light);
     --secondaryTextColor: var(--secondaryTextColor-light);
@@ -29,7 +43,10 @@
     --mainBorderColor: var(--mainBorderColor-light);
     --mainBgColor: var(--mainBgColor-light);
     --themeOppoColor: var(--mainTextColor-dark);
-    --mainCardColor: var(--mainCardColor-dark); */
+    --mainCardColor: var(--mainCardColor-dark);
+    --cardShadowColor1: var(--card-shadow-light1);
+    --cardShadowColor2: var(--card-shadow-light2);
+    --neomorphicCardBg: var(--secondaryTextColor-dark); */
 
 }
 
@@ -41,11 +58,29 @@
     --mainBgColor: var(--mainBgColor-light);
     --themeOppoColor: var(--mainTextColor-dark);
     --mainCardColor: var(--mainCardColor-dark);
-  }
+    --cardShadowColor1: var(--card-shadow-light1);
+    --cardShadowColor2: var(--card-shadow-light2);
+    --neomorphicCardBg: var(--mainBgColor);
+
+}
+
+
+.dark-mode {
+    --mainTextColor: var(--mainTextColor-dark);
+    --secondaryTextColor: var(--secondaryTextColor-dark);
+    --mainLinkColor: var(--mainLinkColor-dark);
+    --mainBorderColor: var(--mainBorderColor-dark);
+    --mainBgColor: var(--mainBgColor-dark);
+    --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark);
+    --cardShadowColor1: var(--card-shadow-light1);
+    --cardShadowColor2: var(--card-shadow-light2);
+    --neomorphicCardBg: var(--mainBgColor);
+}
 
 
 * {
-    font-family: 'Readex Pro';
+    font-family: 'Preahvihear';
     line-height: 1.5em;
     box-sizing: border-box;
     color: var(--mainTextColor);
@@ -101,11 +136,21 @@ a {
     margin-bottom: 4px;
 }
 
+#profile-pic1 {
+    padding: 14px;
+    position: absolute;
+    width: 385px;
+    height: 431px;
+    left: 385px;
+    top: 220px;
+    background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+}
+
 #profile-pic {
+    padding: 14px;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -163,12 +208,6 @@ a {
     font-size: 0.9em;
 }
 
-.card--techstack {
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    align-items: center;
-}
 
 .coding-font {
     font-family: IBM Plex Mono;
@@ -270,6 +309,7 @@ a {
     }
 
     #profile-pic {
+        padding: 14px;
         width: 180px;
         height: 180px;
     }
@@ -289,17 +329,20 @@ p,
 h1 {
     margin: 0px;
     padding: 0px;
+    color: black;
 }
 
 
 h1.page-header {
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 h3 {
     margin: 0px;
     padding: 0px;
+    color: black;
 }
 
 h3.page-header {
@@ -315,84 +358,33 @@ h3.page-header {
     font-style: normal;
 }
 
-.fa {
-    padding: 15px;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-    border-radius: 50%;
-    background: #3B5998;
-    color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-    border-radius: 50%;
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    border-radius: 50%;
-    background-image: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
-    color: white;
-}
-
-.fa-linkedin {
-    border-radius: 50%;
-    background: #0077b5;
-    color: white;
-}
-
-
-.fa-android {
-    border-radius: 50%;
-    background: #3DDC84;
-    color: white;
-}
-
-.fa-github {
-    border-radius: 50%;
-    background: #2b3137;
-    color: white;
-}
-
-
 .grid-container {
     grid-template-columns: auto auto;
-    padding: 10px;
-  }
-  
-  .grid-item {
+}
+
+
+.work-history-container {
+    justify-content: center;
+    gap: 10px;
+}
+
+.grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 14px;
     margin-right: 12px;
     margin-bottom: 12px;
     text-align: start;
-  }
+}
 
-  /* Project Section */
-  .container {
+/* Project Section */
+.container {
     display: flex;
     justify-content: center;
     height: 220px;
-  }
-  .cardItem {
+}
+
+.cardItem {
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 12px;
     margin-top: 20px;
@@ -401,31 +393,341 @@ h3.page-header {
     text-align: start;
     /* transition: all 500ms ease-in-out; */
     background-color: (--mainCardColor-dark);
-  }
-  /* .cardItem:hover {
+}
+
+/* .cardItem:hover {
     margin-top: 40px;
     /* cursor: pointer; */
-    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+/*  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
     /* transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1); } 
   */
-  .cardLabel {
+.cardLabel {
     margin-top: 24px;
     width: 100%;
     font-size: 16px;
     display: block;
-  }
-  .material-icons {
+}
+
+.material-icons {
     font-size: 64px;
     margin-top: 24px;
     color: #1ab5ad;
-  }
+}
 
-  .dark-mode{
-    --mainTextColor: var(--mainTextColor-dark);
-    --secondaryTextColor: var(--secondaryTextColor-dark);
-    --mainLinkColor: var(--mainLinkColor-dark);
-    --mainBorderColor: var(--mainBorderColor-dark);
-    --mainBgColor: var(--mainBgColor-dark);
-    --themeOppoColor: var(--mainTextColor-dark);
-    --mainCardColor: var(--mainCardColor-dark);
-  }
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--mainBgColor);
+}
+
+.workExperienceCard {
+    background-image: url("./assets/images/experience.svg");
+}
+
+.svg-container {
+    position: relative;
+    width: max-content;
+    height: fit-content;
+}
+
+.svg-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.skill-item-container {
+    display: flex;
+    /* Flexbox to align horizontally */
+    justify-content: center;
+    /* Distributes space between the divs */
+    gap: 10px;
+    /* Optional: Space between the divs */
+    margin-bottom: 20px;
+}
+
+.circle-container {
+    width: 44px;
+    height: 44px;
+    border-radius: 10%;
+    background-color: #251C31;
+    /* Background color of the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle-container img {
+    width: 80%;
+    /* Adjust image size */
+    height: auto;
+    border-radius: 50%;
+    /* Make image inside the circle */
+}
+
+.centered-container {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: -5px -5px 9px var(--cardShadowColor1), 5px 5px 9px var(--cardShadowColor2);
+}
+
+.align-start-container {
+    color: white;
+    background: var(--neomorphicCardBg);
+    text-align: s;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: -5px -5px 9px var(--cardShadowColor1), 5px 5px 9px var(--cardShadowColor2);
+}
+
+.centered-text {
+    background-color: var(--mainBgColor);
+}
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.green-text {
+    color: green;
+}
+
+.white-text {
+    color: rgb(255, 255, 255);
+}
+
+.violet-text {
+    color: #A362FF;
+}
+
+.black-text {
+    color: var(--mainTextColor);
+}
+
+
+.main-text-reverse {
+    color: var(--mainTextColor);
+}
+
+skills-body {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    padding-top: 10px;
+    justify-content: start;
+    align-items: start;
+}
+
+skills-body-div {
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+    background: var(--neomorphicCardBg);
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+social-body {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+social-body-div {
+    height: 50px;
+    width: 50px;
+    background: var(--neomorphicCardBg);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.box-image-no-padding {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+.box img {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    justify-content: center;
+    /* centers horizontally */
+    /* Make image inside the circle */
+}
+
+.card--techstack {
+    /* border: 1px solid var(--mainBorderColor); */
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    background: var(--neomorphicCardBg);
+    box-shadow: -5px -5px 9px var(--cardShadowColor1), 5px 5px 9px var(--cardShadowColor2);
+
+}
+
+.box {
+    justify-content: center;
+    /* centers horizontally */
+    align-items: center;
+    box-shadow: -5px -5px 9px var(--cardShadowColor1), 5px 5px 9px var(--cardShadowColor2);
+}
+
+.box2 {
+    box-shadow: inset -5px -5px 9px var(--cardShadowColor1), inset 5px 5px 9px var(--cardShadowColor2);
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -5px -5px 9px var(--cardShadowColor1), 5px 5px 9px var(--cardShadowColor2);
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 9px var(--cardShadowColor1), inset 5px 5px 9px var(--cardShadowColor2);
+}
+
+.truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    /* Limit to 2 lines */
+    max-height: 3em;
+    /* Adjust based on line height */
+}
+
+
+.project-truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    /* Limit to 2 lines */
+    line-height: 1.5em;
+    /* Set line height */
+}
+
+
+
+profile-pic-body {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+profile-pic-body-section.light,
+section.dark {
+	display: flex;
+	width: 150px;
+	height: 150px;
+	align-items: center;
+	justify-content: space-around;
+}
+profile-pic-body-section.light {
+	background-color: var(--mainBgColor);
+}
+profile-pic-body-section.dark {
+	background-color: var(--mainBgColor);
+}
+profile-pic-body-div.circle,
+profile-pic-body-div.circle_black {
+	position: relative;
+	display: flex;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	align-items: center;
+	justify-content: center;
+}
+profile-pic-body-div.circle:before,
+profile-pic-body-div.circle_black:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 150px;
+	height: 150px;
+	content: " ";
+	cursor: pointer;
+	transition: 0.3s ease-out;
+	border-radius: 150px;
+	filter: blur(7px);
+}
+profile-pic-body-div.circle.long,
+profile-pic-body-div.circle_black.long {
+	width: 250px;
+	height: 100px;
+}
+profile-pic-body-div.circle.long:before,
+profile-pic-body-div.circle_black.long:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 250px;
+	height: 100px;
+}
+profile-pic-body-div.circle:before {
+	box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff;
+}
+profile-pic-body-div.circle_black:before {
+	box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5),
+		-8px -8px 20px rgba(255, 255, 255, 0.2);
+}
+profile-pic-body-div.circle p,
+profile-pic-body-div.circle_black p {
+	position: relative;
+	z-index: 5;
+	user-select: none;
+	cursor: pointer;
+}
+profile-pic-body-div.circle_black {
+	color: white;
+}
+@media (max-width: 700px) {
+	profile-pic-body {
+		height: auto;
+		flex-direction: column;
+	}
+	profile-pic-body-section.light,
+	profile-pic-body-section.dark {
+		width: 150px;
+		height: 150px;
+	}
+}

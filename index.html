@@ -19,11 +19,30 @@
 <body>
     <div id="container--main">
         <section id="wrapper--hero" class="section--page">
-            <img id="profile-pic" src="./assets/images/profile_dp.jpg">
+            <section id="wrapper--hero" class="section--page">
 
+                <!-- <profile-pic-body-section class="light">
+                    <profile-pic-body-div class="circle">
+                        <img id="profile-pic" src="./assets/images/profile_dp.jpg">
+                    </profile-pic-body-div>
+            </profile-pic-body-section>
+            
+            <profile-pic-body-section class="dark">
+                    <profile-pic-body-div class="circle_black">
+                        <img id="profile-pic" src="./assets/images/profile_dp.jpg">
+                    </profile-pic-body-div>
+            </profile-pic-body-section> -->
+
+                <profile-pic-body-section class="dark">
+                    <profile-pic-body-div class="circle_black">
+                        <img id="profile-pic" src="./assets/images/profile_dp.jpg">
+                    </profile-pic-body-div>
+                    </profile-pic-body-section>
+            </section>
+                
             <div>
-                <h1 id="user-name">Dipin P J</h1>
-                <h3>I'm <span class="typing" style="color:#12D640"></span></h2>
+                <h1 id="user-name"><black-text>Dipin P J</black-text></h1>
+                <h3><black-text>I'm </black-text><span class="typing" style="color:#06aa2c"></span></h2>
                     <p id="email">pjdipin666@gmail.com</p>
                     <p id="email">+91 7025028741</p>
 
@@ -33,136 +52,320 @@
         <section id="wrapper--hero" class="section--page">
 
             <div>
-
-                <h2>About Me</h2>
-                <p id="bio">
-                  As a seasoned Android developer with over six years of hands-on experience, I have honed my skills in crafting native Android applications that seamlessly blend innovation with functionality. Proficient in both Java and Kotlin languages, I have a proven track record of delivering high-quality solutions across diverse domains. My portfolio boasts a wide array of applications spanning various categories, including social media, employee management, e-commerce, business, editing, education, and utility tools.<br><br>With a keen eye for detail and a passion for innovation, I thrive on tackling complex challenges and transforming ideas into intuitive user experiences. Additionally, my proficiency in Jetpack Compose allows me to leverage the latest technologies to create modern and dynamic user interfaces. I am committed to delivering excellence in every project I undertake, ensuring that each application I develop exceeds expectations and leaves a lasting impression.
+                <h2 class="sticky">About Me</h2>
+                <p id="bio"><black-text>
+                    As a seasoned Android developer with over six years of hands-on experience, I have honed my skills
+                    in crafting native Android applications that seamlessly blend innovation with functionality.
+                    Proficient in both Java and Kotlin languages, I have a proven track record of delivering
+                    high-quality solutions across diverse domains. My portfolio boasts a wide array of applications
+                    spanning various categories, including social media, employee management, e-commerce, business,
+                    editing, education, and utility tools.<br><br>With a keen eye for detail and a passion for
+                    innovation, I thrive on tackling complex challenges and transforming ideas into intuitive user
+                    experiences. Additionally, my proficiency in Jetpack Compose allows me to leverage the latest
+                    technologies to create modern and dynamic user interfaces. I am committed to delivering excellence
+                    in every project I undertake, ensuring that each application I develop exceeds expectations and
+                    leaves a lasting impression.
+                </black-text>
                 </p>
             </div>
 
         </section>
+
         <section id="wrapper--hero" class="section--page">
             <div class="toggle-button">
-                <button onclick="myFunction()"><p>Toggle dark mode</p></button>
+                <button onclick="myFunction()">
+                    <p>Toggle dark mode</p>
+                </button>
             </div>
         </section>
 
+
         <section class="section--page">
-            <div>
-                <a href="https://www.linkedin.com/in/dipinpj/" target="_blank" class="fa fa-linkedin"></a>
-                <a href="https://play.google.com/store/apps/developer?id=Dipin+P+J" class="fa fa-android" target="_blank"></a>
-                <a href="https://github.com/dipinpj" target="_blank" class="fa fa-github"></a>
-                <a href="https://www.instagram.com/dipinpj" class="fa fa-instagram" target="_blank"></a>
-                <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
-            </div>
+            <social-body>
+                <social-body-div class="box">
+                    <a href="https://www.linkedin.com/in/dipinpj/" target="_blank">
+                        <img src="./assets/images/social_linkedin.png" alt="Dipin P J - LinkedIn">
+                    </a>
+
+                </social-body-div>
+                <social-body-div class="box">
+                    <a href="https://play.google.com/store/apps/developer?id=Dipin+P+J" target="_blank">
+                        <img src="./assets/images/social_playstore.png" alt="Dipin P J - Play Store">
+                    </a>
+
+                </social-body-div>
+                <social-body-div class="box">
+                    <a href="https://www.instagram.com/dipinpj" target="_blank">
+                        <img src="./assets/images/social_insta.png" alt="Dipin P J - Instagram">
+                    </a>
+                </social-body-div>
+                <social-body-div class="box">
+                    <a href="https://github.com/dipinpj" target="_blank">
+                        <img src="./assets/images/skill_github.png" alt="Dipin P J - Github">
+                    </a>
+                </social-body-div>
+
+                <social-body-div class="box">
+                    <a href="./assets/resume.pdf" target="_blank">
+                        <img src="./assets/images/social_resume.png" alt="Dipin PJ - Android Developer - Resume">
+                    </a>
+                </social-body-div>
+
+            </social-body>
+
+        </section>
+
+
+        <section>
+            </br>
+            <p><black-text>I'm currently looking to join a </black-text><span class="green-text">cross-functional</span>
+                <black-text>team that values
+                improving people's lives through accessible design</black-text></p>
+                <skills-body>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_flutter.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_kotlin.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_jira.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_github.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_gitlab.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_bitbucket.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_razorpay.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_xd.png" alt="Profile Image">
+                    </skills-body-div>
+
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_admob.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_figma.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_firebase.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_google_location.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_play_console.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_pusher.png" alt="Profile Image">
+                    </skills-body-div>
+                    <skills-body-div class="box">
+                        <img src="./assets/images/skill_zeplin.png" alt="Profile Image">
+                    </skills-body-div>
+                </skills-body>
+
+                <!-- <section class="skill-item-container">
+                
+                <div class="circle-container">
+                    <img src="./assets/images/skill_admob.png" alt="Profile Image">
+                </div>
+                <div class="circle-container">
+                    <img src="./assets/images/skill_figma.png" alt="Profile Image">
+                </div>
+                <div class="circle-container">
+                    <img src="./assets/images/skill_firebase.png" alt="Profile Image">
+                </div>
+                <div class="circle-container">
+                    <img src="./assets/images/skill_flutter.png" alt="Profile Image">
+                </div>
+
+            </section> -->
+                <!-- <section class="skill-item-container">
+               
+                <div class="circle-container">
+                    <img src="./assets/images/skill_razorpay.png" alt="Profile Image">
+                </div>
+                <div class="circle-container">
+                    <img src="./assets/images/skill_xd.png" alt="Profile Image">
+                </div>
+                <div class="circle-container">
+                    <img src="./assets/images/skill_zeplin.png" alt="Profile Image">
+                </div>
+            </section> -->
         </section>
 
         <section class="section--page">
-            <h2>Skills & Qualifications</h2>
+            <h2 class="sticky">Skills & Qualifications</h2>
             <ul id="qualifications--list">
-                <li>✔️ Inquisitive nature to drive improvements</li>
-                <li>✔️ Supreme organization skills</li>
-                <li>✔️ Ability to have difficult conversations professionally</li>
-                <li>✔️ Flexible and focused</li>
-                <li>✔️ Creative troubleshooter and proactive initiator</li>
-                <li>✔️ Conflict resolution with high level of accuracy</li>
-                <li>✔️ Time and Task management</li>
+                <li><black-text>✔️ Inquisitive nature to drive improvements</black-text></li>
+                <li><black-text>✔️ Supreme organization skills</black-text></li>
+                <li><black-text>✔️ Ability to have difficult conversations professionally</black-text></li>
+                <li><black-text>✔️ Flexible and focused</black-text></li>
+                <li><black-text>✔️ Creative troubleshooter and proactive initiator</black-text></li>
+                <li><black-text>✔️ Conflict resolution with high level of accuracy</black-text></li>
+                <li><black-text>✔️ Time and Task management</black-text></li>
             </ul>
         </section>
 
         <section class="section--page">
-            <h2>Tech stack</h2>
+            <h2 class="sticky">Tech stack</h2>
 
             <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>Android</span></div>
-                <div class="card--techstack"><span>Java</span></div>
-                <div class="card--techstack"><span>Kotlin</span></div>
-                <div class="card--techstack"><span>Jetpack Compose</span></div>
-                <div class="card--techstack"><span>Kotlin Multi Platform</span></div>
-                <div class="card--techstack"><span>Flutter</span></div>
-                <div class="card--techstack"><span>Android SDK</span></div>
-                <div class="card--techstack"><span>REST APIs</span></div>
-                <div class="card--techstack"><span>Retrofit</span></div>
-                <div class="card--techstack"><span>Volley</span></div>
-                <div class="card--techstack"><span>Payment Gateways</span></div>
-                <div class="card--techstack"><span>SQLite</span></div>
-                <div class="card--techstack"><span>Room DB</span></div>
-                <div class="card--techstack"><span>Version control(Github, Gitlab, Bitbucket)</span></div>
-                <div class="card--techstack"><span>MVVM</span></div>
-                <div class="card--techstack"><span>Hilt</span></div>
-                <div class="card--techstack"><span>Google APIs</span></div>
-                <div class="card--techstack"><span>Location services</span></div>
-                <div class="card--techstack"><span>Firebase</span></div>
-                <div class="card--techstack"><span>Play-store Publishing</span></div>
-                <div class="card--techstack"><span>AdMob</span></div>
-                <div class="card--techstack"><span>Socket connection</span></div>
-                <div class="card--techstack"><span>Pusher</span></div>
-                <div class="card--techstack"><span>Publish libraries on Git</span></div>
-                <div class="card--techstack"><span>Multi-language apps</span></div>
-                <div class="card--techstack"><span>Navigation graph</span></div>
-                <div class="card--techstack"><span>Coroutines</span></div>
-                <div class="card--techstack"><span>Data structures and algorithms</span></div>
-                <div class="card--techstack"><span>SOAP APIs</span></div>
+                <div class="card--techstack"><span><black-text>Android</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Java</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Kotlin</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Jetpack Compose</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Kotlin Multi Platform</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Flutter</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Android SDK</black-text></span></div>
+                <div class="card--techstack"><span><black-text>REST APIs</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Retrofit</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Volley</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Payment Gateways</black-text></span></div>
+                <div class="card--techstack"><span><black-text>SQLite</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Room DB</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Version control</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Github</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Gitlab</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Bitbucket</black-text></span></div>
+                <div class="card--techstack"><span><black-text>MVVM</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Hilt</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Google APIs</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Location services</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Firebase</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Play-store Publishing</black-text></span></div>
+                <div class="card--techstack"><span><black-text>AdMob</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Socket connection</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Pusher</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Publish libraries on Git</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Multi-language apps</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Navigation graph</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Coroutines</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Data structures and algorithms</black-text></span></div>
+                <div class="card--techstack"><span><black-text>SOAP APIs</black-text></span></div>
+                <div class="card--techstack"><span><black-text>Unit Testing</black-text></span></div>
             </div>
         </section>
 
         <section id="work-history-wrapper" class="grid-container">
-            <h2>Work History</h2>
+            <h2 class="sticky">Work History</h2>
+            <!-- <div class="svg-container">
+                <img src="./assets/images/experience.svg" alt="SVG Background">
+                <div class="content">
+                    <strong>SENIOR ANDROID DEVELOPER - QBurst Technologies</strong>
+                    <p>05/2023 - Present</p>
 
-            <div class="cardItem">
-                <strong>SENIOR ANDROID DEVELOPER - QBurst Technologies</strong>
-                <p>05/2023 - Present</p>
-               
-                <ul>
-                    <li>Improved project efficiency by optimizing performance and systematically addressing and resolving bugs for smooth functionality.</li>
-                    <li>Implemented requested changes and features according to client specifications and preferences.</li>
-                    <li>Performed thorough code reviews to maintain coding standards and uphold best practices, ensuring the quality
-                        and reliability of the codebase.</li>
-                    <li>Coordinated smooth collaboration among mobile, backend, and QA teams throughout the project lifecycle.</li>
-                    <li>Keep up with the latest advancements and emerging technologies in the Android development landscape.</li>
-                </ul>
-            </div>
+                    <ul>
+                        <li>Improved project efficiency by optimizing performance and systematically addressing and
+                            resolving bugs for smooth functionality.</li>
+                        <li>Implemented requested changes and features according to client specifications and
+                            preferences.</li>
+                        <li>Performed thorough code reviews to maintain coding standards and uphold best practices,
+                            ensuring the quality
+                            and reliability of the codebase.</li>
+                        <li>Coordinated smooth collaboration among mobile, backend, and QA teams throughout the project
+                            lifecycle.</li>
+                        <li>Keep up with the latest advancements and emerging technologies in the Android development
+                            landscape.</li>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- <div class="workExperienceCard">
+
+            </div> -->
             <!-- <div class="card--work-history">
                    
                 </div> -->
 
             <!-- <div class="line-break"></div> -->
+            <div class="work-history-container">
+                <div class="align-start-container">
+                    <h1><black-text>Lead Android Engineer</black-text></h1>
+                    <h3><black-text>QBurst</black-text></h3>
+                    <h3><black-text>05/2023 - current</black-text></h3>
+                    <p class="truncate"><black-text>Improved project efficiency by optimizing performance and systematically
+                        addressing and
+                        resolving bugs for smooth functionality.</black-text></p>
+                    </br>
+                    <div class="toggle-button">
 
-            <div class="cardItem">
-                <strong>Senior Android Developer | Leadergroup</strong>
-                <p>10/2021 - 05/2023</p>
-                <ul>
-                    <li>Collaborated within an Agile Scrum team, actively contributing to Continuous Integration and
-                        Continuous
-                        Deployment pipelines, resulting in a remarkable 70% increase in delivery speed.</li>
-                    <li>Designed, Coded, maintained, tested, implemented, and delivered applications with 100% on-time
-                        record and
-                        according to service level objectives.</li>
-                    <li>Developed a reusable module to efficiently handle location-based requirements.</li>
-                    <li>Achieved a significant 50% improvement in application speed and memory usage through the
-                        implementation
-                        of optimized performance algorithms.</li>
-                </ul>
+                   
+                        <div class="toggle-button">
+                            <button>
+                                <p>Read More</p>
+                            </button>
+                        </div>
+                     </div>
+
+                </div>
+                <div class="align-start-container">
+                    <h1><black-text>Senior Android Developer</black-text></h1>
+                    <h3><black-text>Leadergroup</black-text></h3>
+                    <h3><black-text>10/2021 - 05/2023</black-text></h3>
+                    <p class="truncate"><black-text>Collaborated within an Agile Scrum team, actively contributing to Continuous
+                        Integration and
+                        Continuous Deployment pipelines, resulting in a remarkable 70% increase in delivery speed.</black-text></p>
+                    </br>
+                    <div class="toggle-button">
+                        <button>
+                            <p>Read More</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="line-break"></div> -->
+
+                <div class="align-start-container">
+                    <h1><black-text>Senior Android Developer</black-text></h1>
+                    <h3><black-text>Codinghands Info</black-text></h3>
+                    <h3><black-text>12/2020 - 09/2021</black-text></h3>
+                    <p class="truncate"><black-text>Developed advanced programs and implemented design enhancements for over 5
+                        existing
+                        applications.</black-text></p>
+                    </br>
+                    <div class="toggle-button">
+                        <button>
+                            <p>Read More</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="align-start-container">
+                    <h1><black-text>Android Developer</black-text></h1>
+                    <h3><black-text>SBL Corp</black-text></h3>
+                    <h3><black-text>03/2020 - 12/2020</black-text></h3>
+                    <p class="truncate"><black-text>Developed advanced programs and implemented design enhancements for over 5
+                        existing
+                        applications.</black-text></p>
+                    </br>
+                    <div class="toggle-button">
+                        <button>
+                            <p>Read More</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="align-start-container">
+                    <h1><black-text>Android Developer</black-text></h1>
+                    <h3><black-text>Codinghands Info</black-text></h3>
+                    <h3><black-text>03/2018 - 02/2020</black-text></h3>
+                    <p class="truncate"><black-text>Developed advanced programs and implemented design enhancements for over 5
+                        existing
+                        applications.</black-text></p>
+                    </br>
+                    <div class="toggle-button">
+                        <button>
+                            <p>Read More</p>
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- <div class="line-break"></div> -->
-
-            <div class="cardItem">
-                <strong>Senior Android Developer | Codinghands Info</strong>
-                <p>10/2017 - 10/2019</p>
-                <ul>
-                    <li>Developed advanced programs and implemented design enhancements for over 5 existing
-                        applications.</li>
-                    <li>Built and maintained an application that scaled to accommodate 20,000+ daily users,
-                        collaborating with cross-
-                        functional teams in product development, design, and maintenance.</li>
-                    <li>Collaborated with clients to understand needs for improved functionality, leading to effective
-                        communication
-                        with engineers and clients to develop enhancements, resulting in a 50% boost in client
-                        satisfaction.</li>
-                    <li>Improved app performance and memory usage through proper optimization methods.</li>
-                </ul>
-            </div>
 
             <!-- <div class="line-break"></div> -->
 
@@ -180,71 +383,103 @@
 
 
         <section class="section--page">
-            <h2>Projects & Accomplishments</h2>
+            <h2 class="sticky">Projects & Accomplishments</h2>
 
-            <div class="cardItem">
-                <strong>FOXHR</strong>
-                <p>Cutting-edge Human Resource Management application customized for forward-thinking startups and companies. Specializing in efficient workforce management, covering the entire employee lifecycle from onboarding to offboarding and beyond.</p>
-            
-            </div>
-            <div class="cardItem">
-                <strong>BANJO’S ORDERING</strong>
-                <p>Revolutionary e-commerce mobile application for food ordering, enhancing user experience and simplifying the ordering workflow. Leveraged latest technologies to optimize efficiency and improve customer satisfaction throughout the entire process.</p>
-           
-            </div>
+            <div class="align-start-container">
+                <h3><black-text>FOXHR</black-text></h3>
+                <p class="project-truncate"><black-text>Cutting-edge Human Resource Management application customized for
+                    forward-thinking startups and
+                    companies. Specializing in efficient workforce management, covering the entire employee lifecycle
+                    from onboarding to offboarding and beyond.</black-text></p>
 
-            <div class="cardItem">
-                <strong>VOWBIZ </strong>
-                <p>A comprehensive business management mobile application enabling users to effortlessly create personalized business cards and websites tailored to their unique requirements.</p>
-           
             </div>
+            <div class="align-start-container">
+                <h3><black-text>BANJO’S ORDERING</black-text></h3>
+                <p class="project-truncate"><black-text>Revolutionary e-commerce mobile application for food ordering, enhancing
+                    user experience and
+                    simplifying the ordering workflow. Leveraged latest technologies to optimize efficiency and improve
+                    customer satisfaction throughout the entire process.</black-text></p>
 
-            <div class="cardItem">
-                <strong>NAFAE</strong>
-                <p>An online service marketplace facilitating seamless connections between freelancers and customers for a wide spectrum of day-to-day needs, spanning from household services to specialized professional assistance.</p>
-          
             </div>
 
-            <div class="cardItem">
-                <strong>PISTACHIO</strong>
-                <p>A feature-rich social media application, incorporating advanced functionalities to promote user interaction and enhance the overall social networking experience. Implemented innovative technologies to ensure seamless navigation and optimal performance across diverse platforms.</p>
-           
+            <div class="align-start-container">
+                <h3><black-text>VOWBIZ </black-text></h3>
+                <p class="project-truncate"><black-text>A comprehensive business management mobile application enabling users to
+                    effortlessly create personalized business cards and websites tailored to their unique requirements.</black-text></p>
+
             </div>
 
-            <div class="cardItem">
-                <strong>MAKASH APP</strong>
-                <p>Mobile wallet application that revolutionizes financial transactions, providing users with secure, convenient, and efficient digital payment solutions. Seamlessly integrating with diverse payment methods, the app ensures smooth and hassle-free monetary transactions.</p>
-           
+            <div class="align-start-container">
+                <h3><black-text>NAFAE</black-text></h3>
+                <p class="project-truncate"><black-text>An online service marketplace facilitating seamless connections between
+                    freelancers and customers for
+                    a wide spectrum of day-to-day needs, spanning from household services to specialized professional
+                    assistance.</black-text></p>
+
             </div>
 
-            <div class="cardItem">
-                <strong>RADIUS DIRECT</strong>
-                <p>Cloud-based communication mobile application offering comprehensive features including conference calling, real-time chat, and seamless slide sharing capabilities. Designed to streamline remote collaboration and enhance team productivity with intuitive user experiences.</p>
+            <div class="align-start-container">
+                <h3><black-text>PISTACHIO</black-text></h3>
+                <p class="project-truncate"><black-text>A feature-rich social media application, incorporating advanced
+                    functionalities to promote user
+                    interaction and enhance the overall social networking experience. Implemented innovative
+                    technologies to ensure seamless navigation and optimal performance across diverse platforms.</black-text></p>
+
             </div>
 
-            <div class="cardItem">
-                <strong>ABODELY</strong>
-                <p>Robust social media platform tailored for homeowners, facilitating seamless communication and interaction within residential communities with advanced technologies to enhance user experience and promote engagement within the context of home and neighborhood environments.</p>
+            <div class="align-start-container">
+                <h3><black-text>MAKASH APP</black-text></h3>
+                <p class="project-truncate"><black-text>Mobile wallet application that revolutionizes financial transactions,
+                    providing users with secure,
+                    convenient, and efficient digital payment solutions. Seamlessly integrating with diverse payment
+                    methods, the app ensures smooth and hassle-free monetary transactions.</black-text></p>
+
             </div>
 
-            <div class="cardItem">
-                <strong>RCRC APP</strong>
-                <p>Comprehensive government employee management app, streamlining administrative tasks and enhancing workforce efficiency. Seamlessly integrated features for payroll management, leave tracking, and performance evaluation, optimizing organizational processes.</p>
+            <div class="align-start-container">
+                <h3><black-text>RADIUS DIRECT</black-text></h3>
+                <p class="project-truncate"><black-text>Cloud-based communication mobile application offering comprehensive features
+                    including conference
+                    calling, real-time chat, and seamless slide sharing capabilities. Designed to streamline remote
+                    collaboration and enhance team productivity with intuitive user experiences.</black-text></p>
             </div>
-                
+
+            <div class="align-start-container">
+                <h3><black-text>ABODELY</black-text></h3>
+                <p class="project-truncate"><black-text>Robust social media platform tailored for homeowners, facilitating seamless
+                    communication and
+                    interaction within residential communities with advanced technologies to enhance user experience and
+                    promote engagement within the context of home and neighborhood environments.</black-text></p>
+            </div>
+
+            <div class="align-start-container">
+                <h3><black-text>RCRC APP</black-text></h3>
+                <p class="project-truncate"><black-text>Comprehensive government employee management app, streamlining
+                    administrative tasks and enhancing
+                    workforce efficiency. Seamlessly integrated features for payroll management, leave tracking, and
+                    performance evaluation, optimizing organizational processes.</black-text></p>
+            </div>
+
         </section>
 
 
-        
+
         <section class="section--page">
-            <h2>Interests</h2>
+            <h2 class="sticky">Interests</h2>
             <ul id="qualifications--list">
-                <li>✔️ Numerical reasoning</li>
-                <li>✔️ Sudoku</li>
-                <li>✔️ Learning new programming languages</li>
-                <li>✔️ Social networking</li>
+                <li><black-text>✔️ Numerical reasoning</black-text></li>
+                <li><black-text>✔️ Sudoku</black-text></li>
+                <li><black-text>✔️ Learning new programming languages</black-text></li>
+                <li><black-text>✔️ Social networking</black-text></li>
             </ul>
         </section>
+
+        <div>
+
+            <a href="https://www.buymeacoffee.com/dipinpj" target="_blank"><img
+                    src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee"
+                    style="height: 50px !important;width: 200px !important;"></a>
+        </div>
 
     </div>
 
@@ -258,9 +493,40 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+
+
+    <script>
+        // Define a public model class
+        class CompanyDetails {
+            constructor(designation, companyName, duration, jobDescription, jobRoles, icon) {
+                this.designation = designation;
+                this.companyName = companyName;
+                this.duration = duration;
+                this.jobDescription = jobDescription;
+                this.jobRoles = jobRoles;
+                this.icon = icon;
+            }
+
+            getDetails() {
+                return `Name: ${this.name}, Price: $${this.price}, Description: ${this.description}`;
+            }
+        }
+
+        // Creating an instance of the Product class
+        const product = new Product('Laptop', 999.99, 'A high-performance laptop.');
+
+        // Access the public properties and method
+        console.log(product.name); // Output: Laptop
+        console.log(product.price); // Output: 999.99
+        console.log(product.getDetails()); // Output: Name: Laptop, Price: $999.99, Description: A high-performance laptop.
+
+        // Display the product details on the web page
+        document.getElementById('output').textContent = product.getDetails();
+    </script>
     <script type="text/javascript">
         var typed = new Typed('.typing', {
-            strings: ["Android Developer", "Kotlin Dev", "Coder", "AI Enthusiast"],
+            strings: ["Android Developer", "Kotlin Developer", "Coder", "AI Enthusiast"],
             loop: true,
             typeSpeed: 65,
             backSpeed: 65
@@ -271,10 +537,23 @@
     <script src="assets/js/main.js"></script>
     <script>
         function myFunction() {
-           var element = document.body;
-           element.classList.toggle("white-mode");
+            var element = document.body;
+            element.classList.toggle("white-mode");
         }
-        </script>
+    </script>
+    <script>
+        // JavaScript function to navigate to another HTML file
+        function goToCompanyPage(companyDetails) {
+            localStorage.setItem('designation', companyDetails.designation);
+            localStorage.setItem('companyName', companyDetails.companyName);
+            localStorage.setItem('duration', companyDetails.duration);
+            localStorage.setItem('jobDescription', companyDetails.jobDescription);
+            localStorage.setItem('jobRoles', companyDetails.jobRoles);
+            window.location.href = 'company.html'; // Replace 'second.html' with your desired file
+        }
+    </script>
+   
+
 </body>
 
 </html>
