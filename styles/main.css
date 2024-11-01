@@ -26,7 +26,32 @@
     --card-shadow-dark2: rgba(80, 80, 80, 0.3);
 
 
-    --mainTextColor: var(--mainTextColor-dark);
+    /* --mainTextColor: var(--mainTextColor-dark);
+    --secondaryTextColor: var(--mainTextColor-dark);
+    --mainLinkColor: var(--mainLinkColor-dark);
+    --mainBorderColor: var(--mainBorderColor-dark);
+    --mainBgColor: var(--mainBgColor-dark);
+    --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark);
+    --cardShadowColor1: var(--card-shadow-dark1);
+    --cardShadowColor2: var(--card-shadow-dark2);
+    --neomorphicCardBg: var(--mainBgColor); */
+
+    --mainTextColor: var(--mainTextColor-light);
+    --secondaryTextColor: var(--secondaryTextColor-light);
+    --mainLinkColor: var(--mainLinkColor-light);
+    --mainBorderColor: var(--mainBorderColor-light);
+    --mainBgColor: var(--mainBgColor-light);
+    --themeOppoColor: var(--mainTextColor-dark);
+    --mainCardColor: var(--mainCardColor-dark);
+    --cardShadowColor1: var(--card-shadow-light1);
+    --cardShadowColor2: var(--card-shadow-light2);
+    --neomorphicCardBg: var(--mainBgColor);
+
+}
+
+.white-mode {
+        --mainTextColor: var(--mainTextColor-dark);
     --secondaryTextColor: var(--mainTextColor-dark);
     --mainLinkColor: var(--mainLinkColor-dark);
     --mainBorderColor: var(--mainBorderColor-dark);
@@ -46,21 +71,7 @@
     --mainCardColor: var(--mainCardColor-dark);
     --cardShadowColor1: var(--card-shadow-light1);
     --cardShadowColor2: var(--card-shadow-light2);
-    --neomorphicCardBg: var(--secondaryTextColor-dark); */
-
-}
-
-.white-mode {
-    --mainTextColor: var(--mainTextColor-light);
-    --secondaryTextColor: var(--secondaryTextColor-light);
-    --mainLinkColor: var(--mainLinkColor-light);
-    --mainBorderColor: var(--mainBorderColor-light);
-    --mainBgColor: var(--mainBgColor-light);
-    --themeOppoColor: var(--mainTextColor-dark);
-    --mainCardColor: var(--mainCardColor-dark);
-    --cardShadowColor1: var(--card-shadow-light1);
-    --cardShadowColor2: var(--card-shadow-light2);
-    --neomorphicCardBg: var(--mainBgColor);
+    --neomorphicCardBg: var(--mainBgColor); */
 
 }
 
