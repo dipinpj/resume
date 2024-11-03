@@ -8,17 +8,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="strings.js"></script>
 </head>
 
-<body>
+<body onload="getCompanyDetails()">
     <div id="container--main">
         <!-- <a href="index.html"><black-text>&#x2190; Go Back</black-text></a> -->
-        <h1 style="margin-top: 12px;">Lead Android Engineer</h1>
-        <h3>QBurst Technologies</h3>
-        <h3>05/2023 - Current</h3>
+        <h1 id="designation" style="margin-top: 12px;"></h1>
+        <h3 id="companyName"></h3>
+        <h3 id="duration"></h3>
         <section id="wrapper--hero" class="section--page">
-            <img id="project-pic" src="./assets/images/logo_qburst.png">
-
+            <img class="responsive-image" id="dynamicImage" src="">
             <!-- <div>
                     <h1 id="user-name">Fox HR Application</h1>
                  </div>   -->
@@ -26,38 +26,126 @@
 
         </br>
 
-        <p>As a Lead Android Engineer, I am responsible for architecting, developing, and delivering high-quality
-            Android applications that meet both business and user needs. I guide the technical direction of projects,
-            ensuring scalable and maintainable codebases while adhering to best practices and industry standards. I
-            mentor and support a team of developers, conduct code reviews, and foster a culture of continuous learning
-            and collaboration.</p>
-        </br>
-        <p>Additionally, I work closely with cross-functional teams, including product managers and designers, to
-            transform complex requirements into efficient, user-friendly mobile solutions. My role also involves staying
-            current with the latest Android technologies and trends to drive innovation and maintain a competitive edge.
-        </p>
+        <p id="jobDescription"></p>
         </br>
         <h3>Roles and Responsibilities</h3>
-        <ul>
-            <li><black-text>Improved project efficiency by optimizing performance and systematically addressing and
-                    resolving bugs for
-                    smooth functionality.</black-text></li>
-            <li><black-text>Implemented requested changes and features according to client specifications and
-                    preferences.</black-text></li>
-            <li><black-text>Performed thorough code reviews to maintain coding standards and uphold best practices,
-                    ensuring the quality
-                    and reliability of the codebase.</black-text></li>
-            <li><black-text>Coordinated smooth collaboration among mobile, backend, and QA teams throughout the project
-                    lifecycle.</black-text></li>
-            <li><black-text>Keep up with the latest advancements and emerging technologies in the Android development
-                    landscape.</black-text></li>
-        </ul>
-
+        <div id="listContainer"></div>
 
         <!-- <a href="https://play.google.com/store/apps/details?id=com.leader.foxhr&hl=en&gl=US">Play Store Link</a> -->
 
     </div>
+    <script>
+        function showAlert() {
+            alert("This is an alert message!");
+        }
+        function getCompanyDetails() {
+            alert("called")
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const container = document.getElementById("listContainer");
+            const ul = document.createElement("ul");
 
+            const imageElement = document.getElementById("dynamicImage");
+            const companyName = document.getElementById("companyName");
+            const designation = document.getElementById("designation");
+            const duration = document.getElementById("duration");
+            const jobDescription = document.getElementById("jobDescription");
+
+            switch (name) {
+                case "qburst":
+                    designation.textContent = strings.qburstDesgination;
+                    companyName.textContent = strings.qburstName;
+                    duration.textContent = strings.qburstDuration;
+                    jobDescription.textContent = strings.qburstDescription;
+                    imageElement.src="./assets/images/logo_qburst.png"
+                    var items = [
+                        strings.qburstRole1,
+                        strings.qburstRole2,
+                        strings.qburstRole3,
+                        strings.qburstRole4,
+                        strings.qburstRole5];
+                    items.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+
+                    break;
+                case "leadergroup":
+                    designation.textContent = strings.leaderGroupDesgination;
+                    companyName.textContent = strings.leaderGroupName;
+                    duration.textContent = strings.leaderGroupDuration;
+                    jobDescription.textContent = strings.leaderGroupDescription;
+                    imageElement.src="./assets/images/logo_leadergroup.png"
+                    var items = [
+                        strings.leaderGroupRole1,
+                        strings.leaderGroupRole2,
+                        strings.leaderGroupRole3,
+                        strings.leaderGroupRole4
+                    ];
+                    items.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+                    break;
+                case "codinghands":
+                    designation.textContent = strings.codingHandsDesgination;
+                    companyName.textContent = strings.codingHandsName;
+                    duration.textContent = strings.codingHandsDuration;
+                    jobDescription.textContent = strings.codingHandsDescription;
+                    imageElement.src="./assets/images/logo_ch.png"
+                    var items = [
+                        strings.codingHandsRole1,
+                        strings.codingHandsRole2,
+                        strings.codingHandsRole3,
+                        strings.codingHandsRole4
+                    ];
+                    items.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+                    break;
+                case "sbl":
+                    designation.textContent = strings.sblDesgination;
+                    companyName.textContent = strings.sblName;
+                    duration.textContent = strings.sblDuration;
+                    jobDescription.textContent = strings.sblDescription;
+                    imageElement.src="./assets/images/logo_sbl.png"
+                    var items = [
+                        strings.sblRole1,
+                        strings.sblRole2,
+                        strings.sblRole3
+                    ];
+                    items.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+                    break;
+                default:
+                    designation.textContent = strings.chDesgination;
+                    companyName.textContent = strings.chName;
+                    duration.textContent = strings.chDuration;
+                    jobDescription.textContent = strings.chDescription;
+                    imageElement.src="./assets/images/logo_ch.png"
+                    var items = [
+                        strings.chRole1,
+                        strings.chRole2,
+                        strings.chRole3,
+                        strings.chRole4
+                    ];
+                    items.forEach(item => {
+                        const li = document.createElement("li");
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+            }
+            container.innerHTML = '';
+            container.appendChild(ul);
+        }
+    </script>
 </body>
 
 </html>

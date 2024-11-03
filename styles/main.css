@@ -177,6 +177,15 @@ a {
     -webkit-border-radius: 20%;
     box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1);
 }
+.responsive-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20%;
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1);
+}
 
 #email {
     color: var(--mainTextColor);
@@ -185,6 +194,22 @@ a {
 
 #toggle-button {
     color: var(--themeOppoColor);
+}
+
+.transparent-button {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid var(--mainTextColor); /* Border color */
+    color: green; /* Text color */
+    padding: 4px 10px;
+    font-size: 13px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.transparent-button:hover {
+    background-color: var(--mainBgColor); /* Change background on hover */
+    color: white; /* Change text color on hover */
 }
 
 #socials--list {
@@ -524,7 +549,7 @@ h3.page-header {
 }
 
 .green-text {
-    color: green;
+    color: #008000;
 }
 
 .white-text {
@@ -584,7 +609,7 @@ social-body-div {
 .box img {
     width: 50px;
     height: 50px;
-    padding: 8px;
+    padding: 12px;
     justify-content: center;
     /* centers horizontally */
     /* Make image inside the circle */

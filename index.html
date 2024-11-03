@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="strings.js"></script>
 </head>
 
 <body>
@@ -21,28 +22,16 @@
         <section id="wrapper--hero" class="section--page">
             <section id="wrapper--hero" class="section--page">
 
-                <!-- <profile-pic-body-section class="light">
-                    <profile-pic-body-div class="circle">
-                        <img id="profile-pic" src="./assets/images/profile_dp.jpg">
-                    </profile-pic-body-div>
-            </profile-pic-body-section>
-            
-            <profile-pic-body-section class="dark">
-                    <profile-pic-body-div class="circle_black">
-                        <img id="profile-pic" src="./assets/images/profile_dp.jpg">
-                    </profile-pic-body-div>
-            </profile-pic-body-section> -->
-
                 <profile-pic-body-section class="dark">
                     <profile-pic-body-div class="circle_black">
                         <img id="profile-pic" src="./assets/images/profile_dp.jpg">
                     </profile-pic-body-div>
-                    </profile-pic-body-section>
+                </profile-pic-body-section>
             </section>
-                
+
             <div>
                 <h1 id="user-name"><black-text>Dipin P J</black-text></h1>
-                <h3><black-text>I'm </black-text><span class="typing" style="color:#06aa2c"></span></h2>
+                <h3><black-text>I'm </black-text><span class="typing" style="color:#008000"></span></h2>
                     <p id="email">pjdipin666@gmail.com</p>
                     <p id="email">+91 7025028741</p>
 
@@ -54,27 +43,29 @@
             <div>
                 <h2 class="sticky">About Me</h2>
                 <p id="bio"><black-text>
-                    As a seasoned Android developer with over six years of hands-on experience, I have honed my skills
-                    in crafting native Android applications that seamlessly blend innovation with functionality.
-                    Proficient in both Java and Kotlin languages, I have a proven track record of delivering
-                    high-quality solutions across diverse domains. My portfolio boasts a wide array of applications
-                    spanning various categories, including social media, employee management, e-commerce, business,
-                    editing, education, and utility tools.<br><br>With a keen eye for detail and a passion for
-                    innovation, I thrive on tackling complex challenges and transforming ideas into intuitive user
-                    experiences. Additionally, my proficiency in Jetpack Compose allows me to leverage the latest
-                    technologies to create modern and dynamic user interfaces. I am committed to delivering excellence
-                    in every project I undertake, ensuring that each application I develop exceeds expectations and
-                    leaves a lasting impression.
-                </black-text>
+                        As a seasoned Android developer with over six years of hands-on experience, I have honed my
+                        skills
+                        in crafting native Android applications that seamlessly blend innovation with functionality.
+                        Proficient in both Java and Kotlin languages, I have a proven track record of delivering
+                        high-quality solutions across diverse domains. My portfolio boasts a wide array of applications
+                        spanning various categories, including social media, employee management, e-commerce, business,
+                        editing, education, and utility tools.<br><br>With a keen eye for detail and a passion for
+                        innovation, I thrive on tackling complex challenges and transforming ideas into intuitive user
+                        experiences. Additionally, my proficiency in Jetpack Compose allows me to leverage the latest
+                        technologies to create modern and dynamic user interfaces. I am committed to delivering
+                        excellence
+                        in every project I undertake, ensuring that each application I develop exceeds expectations and
+                        leaves a lasting impression.
+                    </black-text>
                 </p>
             </div>
 
         </section>
 
         <section id="wrapper--hero" class="section--page">
-            <div class="toggle-button">
-                <button onclick="myFunction()">
-                    <p>Toggle dark mode</p>
+            <div>
+                <button class="transparent-button" onclick="myFunction()">
+                    <p><black-text>Toggle dark mode</black-text></p>
                 </button>
             </div>
         </section>
@@ -83,31 +74,37 @@
         <section class="section--page">
             <social-body>
                 <social-body-div class="box">
+                    <a href="mailto:pjdipin666@gmail.com" target="_blank">
+                        <img src="./assets/images/gmail.png" alt="Dipin P J - LinkedIn">
+                    </a>
+
+                </social-body-div>
+                <social-body-div class="box">
                     <a href="https://www.linkedin.com/in/dipinpj/" target="_blank">
-                        <img src="./assets/images/social_linkedin.png" alt="Dipin P J - LinkedIn">
+                        <img src="./assets/images/linkedin.png" alt="Dipin P J - LinkedIn">
                     </a>
 
                 </social-body-div>
                 <social-body-div class="box">
                     <a href="https://play.google.com/store/apps/developer?id=Dipin+P+J" target="_blank">
-                        <img src="./assets/images/social_playstore.png" alt="Dipin P J - Play Store">
+                        <img src="./assets/images/playstore.png" alt="Dipin P J - Play Store">
                     </a>
 
                 </social-body-div>
                 <social-body-div class="box">
                     <a href="https://www.instagram.com/dipinpj" target="_blank">
-                        <img src="./assets/images/social_insta.png" alt="Dipin P J - Instagram">
+                        <img src="./assets/images/instagram.png" alt="Dipin P J - Instagram">
                     </a>
                 </social-body-div>
                 <social-body-div class="box">
                     <a href="https://github.com/dipinpj" target="_blank">
-                        <img src="./assets/images/skill_github.png" alt="Dipin P J - Github">
+                        <img src="./assets/images/github.png" alt="Dipin P J - Github">
                     </a>
                 </social-body-div>
 
                 <social-body-div class="box">
                     <a href="./assets/resume.pdf" target="_blank">
-                        <img src="./assets/images/social_resume.png" alt="Dipin PJ - Android Developer - Resume">
+                        <img src="./assets/images/paper-clip.png" alt="Dipin PJ - Android Developer - Resume">
                     </a>
                 </social-body-div>
 
@@ -120,57 +117,64 @@
             </br>
             <p><black-text>I'm currently looking to join a </black-text><span class="green-text">cross-functional</span>
                 <black-text>team that values
-                improving people's lives through useful apps</black-text></p>
-                <skills-body>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_flutter.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_kotlin.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_jira.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_github.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_gitlab.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_bitbucket.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_razorpay.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_xd.png" alt="Profile Image">
-                    </skills-body-div>
+                    improving people's lives through useful apps</black-text>
+            </p>
+            <skills-body>
+               
+                <skills-body-div class="box">
+                    <img src="./assets/images/kotlin.png" alt="Profile Image">
+                </skills-body-div>   
+                <skills-body-div class="box">
+                    <img src="./assets/images/java.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/android.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/vs-code.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/jira.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/github.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/flutter.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/gitlab.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/bitbucket.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/xd.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/admob.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/figma.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/firebase.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/google-maps.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/stripe.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/postman.png" alt="Profile Image">
+                </skills-body-div>
+                <skills-body-div class="box">
+                    <img src="./assets/images/google-cloud.png" alt="Profile Image">
+                </skills-body-div>
+            </skills-body>
 
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_admob.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_figma.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_firebase.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_google_location.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_play_console.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_pusher.png" alt="Profile Image">
-                    </skills-body-div>
-                    <skills-body-div class="box">
-                        <img src="./assets/images/skill_zeplin.png" alt="Profile Image">
-                    </skills-body-div>
-                </skills-body>
-
-                <!-- <section class="skill-item-container">
+            <!-- <section class="skill-item-container">
                 
                 <div class="circle-container">
                     <img src="./assets/images/skill_admob.png" alt="Profile Image">
@@ -186,7 +190,7 @@
                 </div>
 
             </section> -->
-                <!-- <section class="skill-item-container">
+            <!-- <section class="skill-item-container">
                
                 <div class="circle-container">
                     <img src="./assets/images/skill_razorpay.png" alt="Profile Image">
@@ -289,32 +293,38 @@
                     <h1><black-text>Lead Android Engineer</black-text></h1>
                     <h3><black-text>QBurst</black-text></h3>
                     <h3><black-text>05/2023 - current</black-text></h3>
-                    <p class="truncate"><black-text>Improved project efficiency by optimizing performance and systematically
-                        addressing and
-                        resolving bugs for smooth functionality.</black-text></p>
+                    <p class="truncate"><black-text>
+                            As a Lead Android Engineer, I am responsible for architecting, developing, and delivering
+                            high-quality Android applications that meet both business and user needs. I guide the
+                            technical direction of projects, ensuring scalable and maintainable codebases while adhering
+                            to best practices and industry standards. \n\nI mentor and support a team of developers,
+                            conduct code reviews, and foster a culture of continuous learning and collaboration.
+                            Additionally, I work closely with cross-functional teams, including product managers and
+                            designers, to transform complex requirements into efficient, user-friendly mobile solutions.
+                            My role also involves staying current with the latest Android technologies and trends to
+                            drive innovation and maintain a competitive edge.
+                        </black-text></p>
                     </br>
                     <div class="toggle-button">
 
-                   
                         <div class="toggle-button">
-                            <button>
-                                <p>Read More</p>
+                            <button class="transparent-button" onclick="goToCompanyPage(`qburst`)">
+                                <p><black-text>Read More</black-text></p>
                             </button>
                         </div>
-                     </div>
+                    </div>
 
                 </div>
                 <div class="align-start-container">
                     <h1><black-text>Senior Android Developer</black-text></h1>
                     <h3><black-text>Leadergroup</black-text></h3>
                     <h3><black-text>10/2021 - 05/2023</black-text></h3>
-                    <p class="truncate"><black-text>Collaborated within an Agile Scrum team, actively contributing to Continuous
-                        Integration and
-                        Continuous Deployment pipelines, resulting in a remarkable 70% increase in delivery speed.</black-text></p>
-                    </br>
+                    <p class="truncate"><black-text>
+                        As a Senior Android Developer, I design and implement high-quality, scalable Android applications from concept to deployment, focusing on best practices and performance optimization. I lead the development process, collaborating closely with cross-functional teams, including designers, backend developers, and product managers, to deliver intuitive user experiences. My role includes mentoring junior developers, conducting code reviews to maintain code quality, and ensuring adherence to architectural patterns like MVVM and Clean Architecture. I stay up to date with the latest Android trends and technologies, such as Jetpack Compose and Kotlin Coroutines, and integrate them into projects to improve efficiency and functionality. Additionally, I am responsible for troubleshooting and resolving complex issues, optimizing app performance, and implementing unit and UI testing to ensure robust and reliable applications. I also contribute to strategic planning and decision-making to drive the success of mobile initiatives.
+                    </black-text></p> </br>
                     <div class="toggle-button">
-                        <button>
-                            <p>Read More</p>
+                        <button class="transparent-button" onclick="goToCompanyPage(`leadergroup`)">
+                            <p><black-text>Read More</black-text></p>
                         </button>
                     </div>
                 </div>
@@ -325,13 +335,20 @@
                     <h1><black-text>Senior Android Developer</black-text></h1>
                     <h3><black-text>Codinghands Info</black-text></h3>
                     <h3><black-text>12/2020 - 09/2021</black-text></h3>
-                    <p class="truncate"><black-text>Developed advanced programs and implemented design enhancements for over 5
-                        existing
-                        applications.</black-text></p>
+                    <p class="truncate"><black-text>
+                            In my role as a Senior Android Developer, I lead the end-to-end development of high-quality
+                            Android applications, from concept to deployment. I ensure the use of modern architectural
+                            patterns and adhere to best coding practices while driving the adoption of efficient,
+                            scalable, and secure solutions. I actively engage in brainstorming sessions and contribute
+                            to strategic decisions that improve product outcomes. My responsibilities include overseeing
+                            project timelines, performing performance optimizations, and integrating third-party
+                            libraries or APIs when necessary. Furthermore, I coach team members, provide constructive
+                            feedback, and collaborate closely with stakeholders to deliver exceptional mobile
+                            experiences that meet user needs and business expectations. </black-text></p>
                     </br>
                     <div class="toggle-button">
-                        <button>
-                            <p>Read More</p>
+                        <button class="transparent-button" onclick="goToCompanyPage(`codinghands`)">
+                            <p><black-text>Read More</black-text></p>
                         </button>
                     </div>
                 </div>
@@ -339,13 +356,21 @@
                     <h1><black-text>Android Developer</black-text></h1>
                     <h3><black-text>SBL Corp</black-text></h3>
                     <h3><black-text>03/2020 - 12/2020</black-text></h3>
-                    <p class="truncate"><black-text>Developed advanced programs and implemented design enhancements for over 5
-                        existing
-                        applications.</black-text></p>
+                    <p class="truncate"><black-text>
+                            I am responsible for developing high-quality Android applications, focusing on user
+                            experience, performance, and security. My role involves working closely with designers,
+                            product managers, and backend engineers to create seamless, intuitive features that delight
+                            users. I write clean, maintainable, and efficient code, leveraging the latest frameworks and
+                            libraries to optimize performance. Additionally, I implement robust testing strategies to
+                            ensure application stability and actively participate in troubleshooting and resolving
+                            issues. I also drive continuous improvement by refactoring legacy code, contributing to
+                            architectural improvements, and mentoring teammates to foster a culture of innovation and
+                            collaboration.
+                        </black-text></p>
                     </br>
                     <div class="toggle-button">
-                        <button>
-                            <p>Read More</p>
+                        <button class="transparent-button" onclick="goToCompanyPage(`sbl`)">
+                            <p><black-text>Read More</black-text></p>
                         </button>
                     </div>
                 </div>
@@ -353,13 +378,22 @@
                     <h1><black-text>Android Developer</black-text></h1>
                     <h3><black-text>Codinghands Info</black-text></h3>
                     <h3><black-text>03/2018 - 02/2020</black-text></h3>
-                    <p class="truncate"><black-text>Developed advanced programs and implemented design enhancements for over 5
-                        existing
-                        applications.</black-text></p>
+                    <p class="truncate"><black-text>
+                            In my role as an Android developer, I focus on creating robust and user-centric applications
+                            for the Android platform. I engage in the entire software development lifecycle, from
+                            gathering requirements and designing UI/UX to coding and testing the final product.
+                            Utilizing Kotlin and Java, I write clean, maintainable code while adhering to best practices
+                            and design patterns. My responsibilities also include integrating third-party APIs,
+                            optimizing app performance, and troubleshooting issues to enhance functionality. I work
+                            closely with product managers and designers to translate business needs into technical
+                            specifications, ensuring that the applications not only meet user expectations but also
+                            align with the overall business goals. Additionally, I stay abreast of emerging technologies
+                            and trends to continuously improve the application development process and user experience.
+                        </black-text></p>
                     </br>
                     <div class="toggle-button">
-                        <button>
-                            <p>Read More</p>
+                        <button class="transparent-button" onclick="goToCompanyPage(`ch`)">
+                            <p><black-text>Read More</black-text></p>
                         </button>
                     </div>
                 </div>
@@ -387,77 +421,90 @@
 
             <div class="align-start-container">
                 <h3><black-text>FOXHR</black-text></h3>
-                <p class="project-truncate"><black-text>Cutting-edge Human Resource Management application customized for
-                    forward-thinking startups and
-                    companies. Specializing in efficient workforce management, covering the entire employee lifecycle
-                    from onboarding to offboarding and beyond.</black-text></p>
+                <p class="project-truncate"><black-text>Cutting-edge <span class="green-text"> Human Resource Management application</span> customized
+                        for
+                        forward-thinking startups and
+                        companies. Specializing in efficient workforce management, covering the entire employee
+                        lifecycle
+                        from onboarding to offboarding and beyond.</black-text></p>
 
             </div>
             <div class="align-start-container">
                 <h3><black-text>BANJO’S ORDERING</black-text></h3>
-                <p class="project-truncate"><black-text>Revolutionary e-commerce mobile application for food ordering, enhancing
-                    user experience and
-                    simplifying the ordering workflow. Leveraged latest technologies to optimize efficiency and improve
-                    customer satisfaction throughout the entire process.</black-text></p>
+                <p class="project-truncate"><black-text>Revolutionary <span class="green-text"> e-commerce mobile application</span> for food ordering,
+                        enhancing
+                        user experience and
+                        simplifying the ordering workflow. Leveraged latest technologies to optimize efficiency and
+                        improve
+                        customer satisfaction throughout the entire process.</black-text></p>
 
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>VOWBIZ </black-text></h3>
-                <p class="project-truncate"><black-text>A comprehensive business management mobile application enabling users to
-                    effortlessly create personalized business cards and websites tailored to their unique requirements.</black-text></p>
+                <p class="project-truncate"><black-text>A comprehensive <span class="green-text"> business management mobile application</span> enabling
+                        users to
+                        effortlessly create personalized business cards and websites tailored to their unique
+                        requirements.</black-text></p>
 
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>NAFAE</black-text></h3>
-                <p class="project-truncate"><black-text>An online service marketplace facilitating seamless connections between
-                    freelancers and customers for
-                    a wide spectrum of day-to-day needs, spanning from household services to specialized professional
-                    assistance.</black-text></p>
+                <p class="project-truncate"><black-text>An <span class="green-text">online service marketplace</span> facilitating seamless connections
+                        between
+                        freelancers and customers for
+                        a wide spectrum of day-to-day needs, spanning from household services to specialized
+                        professional
+                        assistance.</black-text></p>
 
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>PISTACHIO</black-text></h3>
-                <p class="project-truncate"><black-text>A feature-rich social media application, incorporating advanced
-                    functionalities to promote user
-                    interaction and enhance the overall social networking experience. Implemented innovative
-                    technologies to ensure seamless navigation and optimal performance across diverse platforms.</black-text></p>
+                <p class="project-truncate"><black-text>A feature-rich <span class="green-text">social media application</span>, incorporating advanced
+                        functionalities to promote user
+                        interaction and enhance the overall social networking experience. Implemented innovative
+                        technologies to ensure seamless navigation and optimal performance across diverse
+                        platforms.</black-text></p>
 
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>MAKASH APP</black-text></h3>
-                <p class="project-truncate"><black-text>Mobile wallet application that revolutionizes financial transactions,
-                    providing users with secure,
-                    convenient, and efficient digital payment solutions. Seamlessly integrating with diverse payment
-                    methods, the app ensures smooth and hassle-free monetary transactions.</black-text></p>
+                <p class="project-truncate"><black-text><span class="green-text">Mobile wallet application</span> that revolutionizes financial
+                        transactions,
+                        providing users with secure,
+                        convenient, and efficient digital payment solutions. Seamlessly integrating with diverse payment
+                        methods, the app ensures smooth and hassle-free monetary transactions.</black-text></p>
 
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>RADIUS DIRECT</black-text></h3>
-                <p class="project-truncate"><black-text>Cloud-based communication mobile application offering comprehensive features
-                    including conference
-                    calling, real-time chat, and seamless slide sharing capabilities. Designed to streamline remote
-                    collaboration and enhance team productivity with intuitive user experiences.</black-text></p>
+                <p class="project-truncate"><black-text>Cloud-based <span class="green-text">communication mobile application</span> offering
+                        comprehensive features
+                        including conference
+                        calling, real-time chat, and seamless slide sharing capabilities. Designed to streamline remote
+                        collaboration and enhance team productivity with intuitive user experiences.</black-text></p>
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>ABODELY</black-text></h3>
-                <p class="project-truncate"><black-text>Robust social media platform tailored for homeowners, facilitating seamless
-                    communication and
-                    interaction within residential communities with advanced technologies to enhance user experience and
-                    promote engagement within the context of home and neighborhood environments.</black-text></p>
+                <p class="project-truncate"><black-text>Robust <span class="green-text">social media platform</span> tailored for homeowners,
+                        facilitating seamless
+                        communication and
+                        interaction within residential communities with advanced technologies to enhance user experience
+                        and
+                        promote engagement within the context of home and neighborhood environments.</black-text></p>
             </div>
 
             <div class="align-start-container">
                 <h3><black-text>RCRC APP</black-text></h3>
-                <p class="project-truncate"><black-text>Comprehensive government employee management app, streamlining
-                    administrative tasks and enhancing
-                    workforce efficiency. Seamlessly integrated features for payroll management, leave tracking, and
-                    performance evaluation, optimizing organizational processes.</black-text></p>
+                <p class="project-truncate"><black-text>Comprehensive <span class="green-text">government employee management app</span>, streamlining
+                        administrative tasks and enhancing
+                        workforce efficiency. Seamlessly integrated features for payroll management, leave tracking, and
+                        performance evaluation, optimizing organizational processes.</black-text></p>
             </div>
 
         </section>
@@ -495,35 +542,6 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
 
 
-
-    <script>
-        // Define a public model class
-        class CompanyDetails {
-            constructor(designation, companyName, duration, jobDescription, jobRoles, icon) {
-                this.designation = designation;
-                this.companyName = companyName;
-                this.duration = duration;
-                this.jobDescription = jobDescription;
-                this.jobRoles = jobRoles;
-                this.icon = icon;
-            }
-
-            getDetails() {
-                return `Name: ${this.name}, Price: $${this.price}, Description: ${this.description}`;
-            }
-        }
-
-        // Creating an instance of the Product class
-        const product = new Product('Laptop', 999.99, 'A high-performance laptop.');
-
-        // Access the public properties and method
-        console.log(product.name); // Output: Laptop
-        console.log(product.price); // Output: 999.99
-        console.log(product.getDetails()); // Output: Name: Laptop, Price: $999.99, Description: A high-performance laptop.
-
-        // Display the product details on the web page
-        document.getElementById('output').textContent = product.getDetails();
-    </script>
     <script type="text/javascript">
         var typed = new Typed('.typing', {
             strings: ["Android Developer", "Kotlin Developer", "Coder", "AI Enthusiast"],
@@ -533,6 +551,19 @@
         });
     </script>
 
+    <script>
+        window.onload = function () {
+            const scrollPosition = sessionStorage.getItem('scrollPosition');
+            if (scrollPosition) {
+                window.scrollTo(0, scrollPosition);
+            }
+        };
+
+        // Save scroll position before leaving the page
+        window.onbeforeunload = function () {
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        };
+    </script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
@@ -542,17 +573,20 @@
         }
     </script>
     <script>
-        // JavaScript function to navigate to another HTML file
-        function goToCompanyPage(companyDetails) {
-            localStorage.setItem('designation', companyDetails.designation);
-            localStorage.setItem('companyName', companyDetails.companyName);
-            localStorage.setItem('duration', companyDetails.duration);
-            localStorage.setItem('jobDescription', companyDetails.jobDescription);
-            localStorage.setItem('jobRoles', companyDetails.jobRoles);
-            window.location.href = 'company.html'; // Replace 'second.html' with your desired file
+        function goToCompanyPage(name) {
+            window.location.href = `company.html?name=${encodeURIComponent(name)}`;
         }
+        // JavaScript function to navigate to another HTML file
+        // function goToCompanyPage(companyDetails) {
+        //     localStorage.setItem('designation', companyDetails.designation);
+        //     localStorage.setItem('companyName', companyDetails.companyName);
+        //     localStorage.setItem('duration', companyDetails.duration);
+        //     localStorage.setItem('jobDescription', companyDetails.jobDescription);
+        //     localStorage.setItem('jobRoles', companyDetails.jobRoles);
+        //     window.location.href = 'company.html'; // Replace 'second.html' with your desired file
+        // }
     </script>
-   
+
 
 </body>
 
