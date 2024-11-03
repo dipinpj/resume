@@ -5,30 +5,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dipin P J</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="strings.js"></script>
 </head>
 
 <body onload="getCompanyDetails()">
     <div id="container--main">
         <!-- <a href="index.html"><black-text>&#x2190; Go Back</black-text></a> -->
-        <h1 id="designation" style="margin-top: 12px;"></h1>
-        <h3 id="companyName"></h3>
-        <h3 id="duration"></h3>
+        <h1 class="black-text" id="designation" style="margin-top: 12px;"></h1>
+        <h3 class="black-text" id="companyName"></h3>
+        <h3 class="black-text" id="duration"></h3>
         <section id="wrapper--hero" class="section--page">
             <img class="responsive-image" id="dynamicImage" src="">
             <!-- <div>
                     <h1 id="user-name">Fox HR Application</h1>
                  </div>   -->
         </section>
-
         </br>
-
-        <p id="jobDescription"></p>
+        <p class="black-text" id="jobDescription"></p>
         </br>
-        <h3>Roles and Responsibilities</h3>
+        <h3 class="black-text">Roles and Responsibilities</h3>
         <div id="listContainer"></div>
 
         <!-- <a href="https://play.google.com/store/apps/details?id=com.leader.foxhr&hl=en&gl=US">Play Store Link</a> -->
@@ -142,6 +146,7 @@
             container.appendChild(ul);
         }
     </script>
+    
 </body>
 
 </html>
